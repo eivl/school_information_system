@@ -1,0 +1,17 @@
+Werkzeug
+ipdb
+mypy
+django-stubs
+pytest
+pytest-sugar
+django-test-plus
+flake8
+coverage
+black
+pylint-django
+pre-commit
+factory-boy
+django-debug-toolbar
+django-extensions
+django-coverage-plugin
+pytest-django

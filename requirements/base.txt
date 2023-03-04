@@ -1,0 +1,11 @@
+pytz
+python-slugify
+Pillow
+whitenoise
+unidecode
+django
+django-environ
+django-model-utils
+django-allauth
+django-crispy-forms
+django-autoslug

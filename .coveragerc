@@ -1,0 +1,6 @@
+[run]
+include = school_information_system/*
+omit = *migrations*, *tests*
+disable_warnings = already-imported
+plugins =
+    django_coverage_plugin
