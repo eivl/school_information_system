@@ -1,5 +1,6 @@
 from typing import Any, Sequence
 
+import factory
 from django.contrib.auth import get_user_model
 from factory import Faker, post_generation
 from factory.django import DjangoModelFactory
@@ -10,6 +11,7 @@ class UserFactory(DjangoModelFactory):
     username = Faker("user_name")
     email = Faker("email")
     name = Faker("name")
+
 
     @post_generation
     def password(
@@ -25,9 +27,9 @@ class UserFactory(DjangoModelFactory):
                 digits=True,
                 upper_case=True,
                 lower_case=True,
-            ).generate(extra_kwargs={})
+            )
         )
-        self.set_password(password)
+        self.set_password(password.provider)
 
     class Meta:
         model = get_user_model()
