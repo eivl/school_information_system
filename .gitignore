@@ -328,3 +328,4 @@ school_information_system/media/
 *.sqlite
 *.sqlite3
 
+.idea/
